@@ -117,7 +117,7 @@ def logout():
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
 
 credentials = service_account.Credentials.from_service_account_file(
-    "/home/gayathriacharigeetha/Aixplain_yt/adroit-marking-227912-1254f2a39b82", scopes=SCOPES)
+    "/home/gayathriacharigeetha/Aixplain_yt/adroit-marking-227912-1254f2a39b82.json", scopes=SCOPES)
 youtube=build("youtube","v3",credentials=credentials)
 
 aixplain_url = "https://api.aixplain.com/analyze"
